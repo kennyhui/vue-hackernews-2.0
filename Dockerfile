@@ -5,4 +5,5 @@ WORKDIR /app
 COPY . /app/
 EXPOSE 80
 RUN  npm install \
-  && npm run start
+  && npm run build \
+  &&  npm run start
